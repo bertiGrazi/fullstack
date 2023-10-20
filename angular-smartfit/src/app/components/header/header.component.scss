@@ -1,0 +1,61 @@
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  min-width: 100vw;
+
+  gap: 3.2rem;
+}
+
+header .logo-container {
+  background: black;
+  padding: 2.4rem;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header .logo-container img {
+  height: 100px;
+}
+
+header .text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  max-width: 80%;
+  /*O texto irá se localizar no centro do espaço disponivel dele*/
+  margin: 0 auto;
+}
+
+header .text-container h1 {
+  font-size: 3.4rem;
+  color: var(--dark-grey);
+}
+
+header .text-container p {
+  color: var(--light-grey);
+}
+
+header .text-container .heading {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+
+  margin-bottom: 2.4rem;
+  gap: 1.4rem;
+}
+
+header .text-container .heading .heading-border {
+  height: 1.2rem;
+  width: 40%;
+  background-color: var(--dark-grey);
+}
