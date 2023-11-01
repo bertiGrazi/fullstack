@@ -11,11 +11,14 @@ import { TaskList } from '../../model/task-list';
 })
 export class ToDoListComponent implements DoCheck{
 
-  public taskList: Array<TaskList> = [];
+  public taskList: Array<TaskList> = JSON.parse(localStorage.getItem("list") || '[]');
   constructor() {}
 
   ngDoCheck() {
+   if (this.taskList) {
     this.taskList.sort((first, last) => Number(first.checked) - Number(last.checked));
+    localStorage.setItem("list", JSON.stringify(this.taskList))
+   }
   }
 
 
@@ -36,5 +39,19 @@ export class ToDoListComponent implements DoCheck{
     if (confirm) {
       this.taskList = []
     }
+  }
+
+  public validateInput(event: string, index: number) {
+    if (!event.length) {
+     const confirm = window.confirm("Task vazia. Deseja deletar?")
+
+     if (confirm) { 
+      this.deleteItemList(index)
+     }
+    }
+  }
+
+  public setLocalStorage() {
+
   }
 }
