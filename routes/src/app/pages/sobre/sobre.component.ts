@@ -22,10 +22,10 @@ export class SobreComponent implements OnInit{
       res => console.log(res)
     )
 
-    setInterval(() => {
-      this.router.navigate(['404']);
-      // Ou use navigateByUrl
-      // this.router.navigateByUrl('/destino');
-    }, 5000);
+    // setInterval(() => {
+    //   this.router.navigate(['404']);
+    //   // Ou use navigateByUrl
+    //   // this.router.navigateByUrl('/destino');
+    // }, 5000);
   }
 }
