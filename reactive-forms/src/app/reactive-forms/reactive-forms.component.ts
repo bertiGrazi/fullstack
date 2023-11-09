@@ -10,16 +10,18 @@ export class ReactiveFormsComponent implements OnInit{
 
   public cadastroForm: FormGroup = this.formBuilder.group({
     firstName: ['', Validators.required],
-    lastName: ['']
+    lastName: ['', [Validators.required, Validators.minLength(5)]],
+    email: ['', [Validators.required, Validators.email]]
   })
   constructor(private formBuilder: FormBuilder) {}
 
-  ngOnInit(): void {
-    throw new Error('Method not implemented.');
-  }
+  ngOnInit(): void {}
 
   public subimitForm() {
-    console.log(this.cadastroForm.value.firstName);
-    console.log(this.cadastroForm.value.lastName);
+    if(this.cadastroForm.valid) {
+      console.log(this.cadastroForm.value);
+      console.log(this.cadastroForm.value.firstName);
+      console.log(this.cadastroForm.value.lastName);
+    }
   }
 }
