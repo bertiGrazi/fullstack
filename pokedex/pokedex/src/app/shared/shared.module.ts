@@ -3,6 +3,8 @@ import { CommonModule } from '@angular/common';
 
 //Components
 import { PokerHeaderComponent } from './poker-header/poker-header.component';
+import { PokerSearchComponent } from './poker-search/poker-search.component';
+import { PokerListComponent } from './poker-list/poker-list.component';
 
 
 
@@ -11,10 +13,14 @@ import { PokerHeaderComponent } from './poker-header/poker-header.component';
     CommonModule
   ],
   exports: [
-    PokerHeaderComponent
+    PokerHeaderComponent,
+    PokerSearchComponent,
+    PokerListComponent
   ],
   declarations: [
-    PokerHeaderComponent
+    PokerHeaderComponent,
+    PokerSearchComponent,
+    PokerListComponent
   ]
 })
 export class SharedModule { }
