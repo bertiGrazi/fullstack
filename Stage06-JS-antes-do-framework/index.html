@@ -15,38 +15,9 @@
     <a href="/404" onclick="route()">404</a>
   </nav>
 
-  <div id="#app"></div>
+  <div id="app"></div>
 
-  <script>
-    const routes = {
-      "/": "/pages/home.html",
-      "/about": "/pages/about.html",
-      "/contact": "/pages/contact.html",
-      "404": "/pages/404.html",
-    }
-
-    function route(event) {
-      //verifica se pegou o evento mesmo
-      event = event || window.event
-
-      window.history.pushState({}, "", event.target.href)
-
-      //evite o padrão
-      event.preventDefault()
-
-      handle()
-    }
-
-    function handle() {
-      //destruturando para pegar apenas o pathname
-      const { pathname, href, host, port } = window.location
-
-      console.log(pathname, href, host, port)
-    }
-
-    // substituido pelo onclick
-    //document.querySelector('nav a:nth-clid(1)').addEventListener('click')
-  </script>
+  <script src="js/index.js" type="module"></script>
 </body>
 
 </html>
