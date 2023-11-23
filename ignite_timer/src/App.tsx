@@ -3,10 +3,10 @@ import { Button } from "./components/Button";
 export function App() {
   return (
     <>
-      <Button color="primary"/>
-      <Button color="danger"/>
-      <Button color="secondary"/>
-      <Button color="sucess"/>
+      <Button variant="primary"/>
+      <Button variant="danger"/>
+      <Button variant="secondary"/>
+      <Button variant="sucess"/>
       <Button />
     </>
   )

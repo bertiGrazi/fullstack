@@ -1,12 +1,12 @@
-import style from '../components/Button.module.css';
+import { ButtonContainer, ButtonVariant } from './Button.styles'
 
 interface ButtonProps {
-  color?: 'primary' | 'secondary' | 'danger' | 'sucess' 
+  variant?: ButtonVariant
 }
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
-export function Button({color = 'primary'}: ButtonProps) {
+export function Button({variant = 'primary'}: ButtonProps) {
   return (
-    <button className={`${style.button} ${style[color]}`}>Enviar</button>
+    <ButtonContainer variant={variant}>Enviar</ButtonContainer>
   )
 }
