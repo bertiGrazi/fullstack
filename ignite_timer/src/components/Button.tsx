@@ -5,8 +5,6 @@ interface ButtonProps {
 }
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
-export function Button({variant = 'primary'}: ButtonProps) {
-  return (
-    <ButtonContainer variant={variant}>Enviar</ButtonContainer>
-  )
+export function Button({ variant = 'primary' }: ButtonProps) {
+  return <ButtonContainer variant={variant}>Enviar</ButtonContainer>
 }
