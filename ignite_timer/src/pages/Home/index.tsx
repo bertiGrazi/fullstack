@@ -19,7 +19,14 @@ export function Home() {
           <TaskInput
             id="task"
             placeholder="Dê um nome para o seu projeto"
+            list="task-suggestion"
           ></TaskInput>
+
+          <datalist id="task-suggestion">
+            <option value="Trabalhar no Design System" />
+            <option value="Trabalhar na Integração da Tela de Corrida" />
+            <option value="Reunião BRG" />
+          </datalist>
 
           <label htmlFor="minutesAmount">durante</label>
           <MinutesAmountInput
