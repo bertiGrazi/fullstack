@@ -8,6 +8,7 @@ export const HeaderContainer = styled.div`
   nav {
     display: flex;
     gap: 0.5rem;
+    outline: none;
 
     a {
       width: 3rem;
