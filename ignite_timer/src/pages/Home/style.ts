@@ -11,7 +11,7 @@ export const HomeContainer = styled.main`
   form {
     display: flex;
     flex-direction: column;
-    align-itens: center;
+    align-items: center;
     gap: 3.5rem;
   }
 `
@@ -19,7 +19,7 @@ export const HomeContainer = styled.main`
 export const FormContainer = styled.div`
   width: 100%;
   display: flex;
-  align-itens: center;
+  align-items: center;
   justify-content: center;
   gap: 0.5rem;
   color: ${(props) => props.theme['gray-100']};
