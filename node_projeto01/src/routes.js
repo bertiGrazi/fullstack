@@ -1,8 +1,9 @@
-const database = new Database()
 import { randomUUID } from 'node:crypto'
+import { Database } from './database/database.js'
+
+const database = new Database()
 
 export const routes = [
-
   {
     method: 'GET',
     path: '/users',
@@ -23,9 +24,9 @@ export const routes = [
         name,
         email
       }
-  
+
       database.insert('users', user)
-      
+
       return res.writeHead(201).end()
     }
   }
