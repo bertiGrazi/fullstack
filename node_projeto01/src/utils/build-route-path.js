@@ -1,9 +1,5 @@
-// /users/:id
-
-// Regex = expressões regulares 
-
 export function buildRoutePath(path) {
-  const routeParametersRegex = /:(?<$1>[a-z0-9\-_]+)/g
+  const routeParametersRegex = /:([a-z0-9\-_]+)/g
   //(?<$1>[a-z0-9\-_]+)
   const pathWithParams = path.replaceAll(routeParametersRegex, '(?<$1>[a-z0-9\-_]+)')
 
