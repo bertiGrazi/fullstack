@@ -61,6 +61,7 @@ section:nth-child(even) {
   color: var(--green);
   cursor: pointer;
   font-size: 1.7rem;
+  background: #ffffff;
 }
 
 .btn span {
@@ -217,6 +218,139 @@ section:nth-child(even) {
   font-size: 2.5rem;
   color: var(--black);
   padding: 1rem 0;
+}
+
+.about .row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.about .row .image {
+  flex: 1 1 45%;
+}
+
+.about .row .image img {
+  width: 100%;
+}
+
+.about .row .container {
+  flex: 1 1 45%;
+}
+
+.about .row .container h3 {
+  color: var(--black);
+  text-shadow: var(--text-shadow);
+  font-size: 4rem;
+  line-height: 1.8;
+}
+
+.about .row .container p {
+  color: var(--light-color);
+  padding: 1rem 0;
+  font-size: 1.5rem;
+  line-height: 1.8;
+}
+
+.doctors .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+  gap: 2rem;
+}
+
+.doctors .box-container .box {
+  text-align: center;
+  background: #ffffff;
+  border-radius: 0.5rem;
+  border: var(--border);
+  box-shadow: var(--box-shadow);
+}
+
+.doctors .box-container .box img {
+  height: 20rem;
+  border-radius: 0.5rem;
+  border: var(--border);
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.doctors .box-container .box h3 {
+  color: var(--black);
+  font-size: 2.5rem;
+}
+
+.doctors .box-container .box span {
+  color: var(--green);
+  font-size: 1.5rem;
+}
+
+.doctors .box-container .box .share {
+  padding-top: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.doctors .box-container .box .share a {
+  height: 5rem;
+  width: 5rem;
+  line-height: 4.5rem;
+  font-size: 2rem;
+  color: var(--green);
+  border-radius: 0.5rem;
+  border: var(--border);
+  margin: 0.5rem;
+}
+
+.doctors .box-container .box .share a:hover {
+  background: var(--green);
+  color: #ffffff;
+  box-shadow: var(--box-shadow);
+}
+
+.book .row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.book .row .image {
+  flex: 1 1 45%;
+}
+
+.book .row .image img {
+  width: 100%;
+}
+
+.book .row form {
+  flex: 1 1 45%;
+  background: #ffffff;
+  border: var(--border);
+  box-shadow: var(--box-shadow);
+  text-align: center;
+  padding: 2rem;
+  border-radius: 0.5rem;
+}
+
+.book .row form h3 {
+  color: var(--black);
+  padding-bottom: 1rem;
+  font-size: 3.5rem;
+}
+
+.book .row form .box {
+  width: 100%;
+  margin: 0.7rem 0;
+  border-radius: 0.5rem;
+  border: var(--border);
+  font-size: 1.6rem;
+  color: var(--black);
+  text-transform: none;
+  padding: 1rem;
+}
+
+.book .row form .btn {
+  padding: 1rem 4rem;
 }
 
 /*media queries*/
